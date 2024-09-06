@@ -25,3 +25,27 @@
 *const yearIs = 2052;
 *console.log(isLeapYear(yearIs));
 */
+
+// Average of Odds numbers
+/*
+*function avgOdds(numbers) {
+* let odds = [];
+*  for (const num of numbers) {
+*    if (num % 2 === 1) {
+*      odds.push(num);
+*    }
+*  }
+*  let sum = 0;
+*  let length = odds.length;
+*  for (let odd of odds) {
+*    sum += odd;
+*  }
+*  let avg = sum / length;
+*  return avg;
+*}
+*
+*let random = [24, 43, 45, 53, 75, 7];
+*
+*const result = avgOdds(random);
+*console.log(result);
+*/
