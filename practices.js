@@ -52,20 +52,36 @@
 
 // min height form array
 /*
-*const height = [56, 75, 66, 65, 72, 63, 76, 2];
-*
-*function minHeight(numbers) {
-*  let min = numbers[0];
-*  for (const num of numbers) {
-*    if (min > num) {
-*      min = num;
-*    }
-*  }
-*  return min;
-*}
-*
-*const result = minHeight(height);
-*console.log(result);
+ *const height = [56, 75, 66, 65, 72, 63, 76, 2];
+ *
+ *function minHeight(numbers) {
+ *  let min = numbers[0];
+ *  for (const num of numbers) {
+ *    if (min > num) {
+ *      min = num;
+ *    }
+ *  }
+ *  return min;
+ *}
+ *
+ *const result = minHeight(height);
+ *console.log(result);
  */
 
-
+// *Market total cost calculator
+/*
+*function totalCost(shirtQuantity, pantQuantity, shoeQuantity) {
+*  const shirtPrice = 500;
+*  const pantPrice = 300;
+*  const shoePrice = 800;
+*
+*  shirtTotalPrice = shirtPrice * shirtQuantity;
+*  pantTotalPrice = pantPrice * pantQuantity;
+*  shoeTotalPrice = shoePrice * shoeQuantity;
+*
+*  totalPrice = shirtTotalPrice + pantTotalPrice + shoeTotalPrice;
+*  return totalPrice;
+*}
+*
+*console.log(totalCost(2, 1, 1));
+*/
