@@ -68,20 +68,45 @@
  *console.log(result);
  */
 
-// *Market total cost calculator
+// Market total cost calculator
 /*
-*function totalCost(shirtQuantity, pantQuantity, shoeQuantity) {
-*  const shirtPrice = 500;
-*  const pantPrice = 300;
-*  const shoePrice = 800;
+ *function totalCost(shirtQuantity, pantQuantity, shoeQuantity) {
+ *  const shirtPrice = 500;
+ *  const pantPrice = 300;
+ *  const shoePrice = 800;
+ *
+ *  shirtTotalPrice = shirtPrice * shirtQuantity;
+ *  pantTotalPrice = pantPrice * pantQuantity;
+ *  shoeTotalPrice = shoePrice * shoeQuantity;
+ *
+ *  totalPrice = shirtTotalPrice + pantTotalPrice + shoeTotalPrice;
+ *  return totalPrice;
+ *}
+ *
+ *console.log(totalCost(2, 1, 1));
+ */
+
+// expensive phone calculator
+/*
+*const mobiles = [
+*  { name: "Samsung", price: 20000, camera: "12mp", color: "black" },
+*  { name: "xiaomi", price: 18000, camera: "12mp", color: "black" },
+*  { name: "Oppo", price: 30000, camera: "12mp", color: "black" },
+*  { name: "Iphone", price: 100000, camera: "12mp", color: "black" },
+*  { name: "Walton", price: 31000, camera: "12mp", color: "black" },
+*  { name: "HTC", price: 27000, camera: "12mp", color: "black" },
+*];
 *
-*  shirtTotalPrice = shirtPrice * shirtQuantity;
-*  pantTotalPrice = pantPrice * pantQuantity;
-*  shoeTotalPrice = shoePrice * shoeQuantity;
-*
-*  totalPrice = shirtTotalPrice + pantTotalPrice + shoeTotalPrice;
-*  return totalPrice;
+*function expensivePhone(phones) {
+*  let max = phones[0];
+*  for (let phone of phones) {
+*    if (phone.price > max.price) {
+*      max = phone;
+*    }
+*  }
+*  return max.name;
 *}
 *
-*console.log(totalCost(2, 1, 1));
-*/
+*let expPhone = expensivePhone(mobiles)
+*console.log('The most expensive phone is', expPhone);
+ */
