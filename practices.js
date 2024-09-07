@@ -132,3 +132,30 @@
 *totalTaka = totalPrice(products);
 *console.log(totalTaka);
 */
+
+//Layard discount calculation
+/*
+*function discount(quantity) {
+*if (quantity <= 100) {
+*    totalPrice = quantity * 100;
+*    return totalPrice;
+*  } else if (quantity <= 200) {
+*    first100Price = 100 * 100;
+*    leftProducts = quantity - 100;
+*    leftProductsPrice = leftProducts * 90;
+*    totalPrice = first100Price + leftProductsPrice;
+*    return totalPrice;
+*  } else {
+*    first100Price = 100 * 100;
+*    leftProducts = quantity - 100;
+*    second100Price = 100 * 90;
+*    leftProducts = quantity - 200;
+*    leftProductsPrice = leftProducts * 70;
+*    totalPrice = first100Price + second100Price + leftProductsPrice;
+*    return totalPrice;
+*  }
+*
+*}
+*let totalCost = discount(300);
+*console.log(totalCost);
+*/
