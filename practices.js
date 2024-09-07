@@ -88,25 +88,47 @@
 
 // expensive phone calculator
 /*
-*const mobiles = [
-*  { name: "Samsung", price: 20000, camera: "12mp", color: "black" },
-*  { name: "xiaomi", price: 18000, camera: "12mp", color: "black" },
-*  { name: "Oppo", price: 30000, camera: "12mp", color: "black" },
-*  { name: "Iphone", price: 100000, camera: "12mp", color: "black" },
-*  { name: "Walton", price: 31000, camera: "12mp", color: "black" },
-*  { name: "HTC", price: 27000, camera: "12mp", color: "black" },
+ *const mobiles = [
+ *  { name: "Samsung", price: 20000, camera: "12mp", color: "black" },
+ *  { name: "xiaomi", price: 18000, camera: "12mp", color: "black" },
+ *  { name: "Oppo", price: 30000, camera: "12mp", color: "black" },
+ *  { name: "Iphone", price: 100000, camera: "12mp", color: "black" },
+ *  { name: "Walton", price: 31000, camera: "12mp", color: "black" },
+ *  { name: "HTC", price: 27000, camera: "12mp", color: "black" },
+ *];
+ *
+ *function expensivePhone(phones) {
+ *  let max = phones[0];
+ *  for (let phone of phones) {
+ *    if (phone.price > max.price) {
+ *      max = phone;
+ *    }
+ *  }
+ *  return max.name;
+ *}
+ *
+ *let expPhone = expensivePhone(mobiles)
+ *console.log('The most expensive phone is', expPhone);
+ */
+
+// Shopping cart calculation
+/*
+
+*const products = [
+*  { name: "shampoo", price: 300, quantity: 2 },
+*  { name: "chiruni", price: 100, quantity: 3 },
+*  { name: "shirt", price: 700, quantity: 5 },
+*  { name: "pant", price: 1200, quantity: 1 },
 *];
 *
-*function expensivePhone(phones) {
-*  let max = phones[0];
-*  for (let phone of phones) {
-*    if (phone.price > max.price) {
-*      max = phone;
-*    }
+*function totalPrice(productsInfo) {
+*  let total = 0;
+*  for (let product of productsInfo) {
+*    totalCost = product.price * product.quantity;
+*    total += totalCost;
 *  }
-*  return max.name;
+*  return total;
 *}
-*
-*let expPhone = expensivePhone(mobiles)
-*console.log('The most expensive phone is', expPhone);
- */
+*totalTaka = totalPrice(products);
+*console.log(totalTaka);
+*/
