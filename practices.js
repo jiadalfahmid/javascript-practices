@@ -28,24 +28,44 @@
 
 // Average of Odds numbers
 /*
-*function avgOdds(numbers) {
-* let odds = [];
+ *function avgOdds(numbers) {
+ * let odds = [];
+ *  for (const num of numbers) {
+ *    if (num % 2 === 1) {
+ *      odds.push(num);
+ *    }
+ *  }
+ *  let sum = 0;
+ *  let length = odds.length;
+ *  for (let odd of odds) {
+ *    sum += odd;
+ *  }
+ *  let avg = sum / length;
+ *  return avg;
+ *}
+ *
+ *let random = [24, 43, 45, 53, 75, 7];
+ *
+ *const result = avgOdds(random);
+ *console.log(result);
+ */
+
+// min height form array
+/*
+*const height = [56, 75, 66, 65, 72, 63, 76, 2];
+*
+*function minHeight(numbers) {
+*  let min = numbers[0];
 *  for (const num of numbers) {
-*    if (num % 2 === 1) {
-*      odds.push(num);
+*    if (min > num) {
+*      min = num;
 *    }
 *  }
-*  let sum = 0;
-*  let length = odds.length;
-*  for (let odd of odds) {
-*    sum += odd;
-*  }
-*  let avg = sum / length;
-*  return avg;
+*  return min;
 *}
 *
-*let random = [24, 43, 45, 53, 75, 7];
-*
-*const result = avgOdds(random);
+*const result = minHeight(height);
 *console.log(result);
-*/
+ */
+
+
