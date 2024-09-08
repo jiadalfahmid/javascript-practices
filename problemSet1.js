@@ -51,18 +51,22 @@
 
 let sentence = "I am learning Programming to become a programmer";
 /*
-*function longestWordFinder(sentence) {
-*  let longestWord='';
-*  let words = sentence.split(' ');
-*  for (let word of words) {
-*    if (longestWord.length < word.length) {
-*      longestWord = word;
-*    }
-*  }
-*  return longestWord;
-*}
-*
-*console.log(longestWordFinder(sentence));
-*/
+ *function longestWordFinder(sentence) {
+ *  let longestWord='';
+ *  let words = sentence.split(' ');
+ *  for (let word of words) {
+ *    if (longestWord.length < word.length) {
+ *      longestWord = word;
+ *    }
+ *  }
+ *  return longestWord;
+ *}
+ *
+ *console.log(longestWordFinder(sentence));
+ */
 
-// 
+// Generate a random number between 10 to 20.
+/*
+*let generate = Math.floor(Math.random() * 11)+10;
+*console.log(generate);
+*/
