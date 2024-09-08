@@ -12,19 +12,57 @@
 
 // Count how many times the a number is repeated in the array.
 /*
-*let numbers = [5, 6, 11, 12, 98, 5];
-*
-*function countRepeat(array, find) {
-*  let count = 0;
-*  for (let num of array) {
-*    if (find === num) {
-*      count++;
+ *let numbers = [5, 6, 11, 12, 98, 5];
+ *
+ *function countRepeat(array, find) {
+ *  let count = 0;
+ *  for (let num of array) {
+ *    if (find === num) {
+ *      count++;
+ *    }
+ *  }
+ *  return count;
+ *}
+ *
+ *let find = 13;
+ *let ifRepeated = countRepeat(numbers, find);
+ *console.log(ifRepeated);
+ */
+
+// Write a function to count the number of vowels in a string.
+/*
+ *let sentence = "I love you";
+ *
+ *function vowelsCounter(sentence) {
+ *  const vowels = "aeiou";
+ *  let count = 0;
+ *  for (let letter of sentence) {
+ *    if (vowels.includes(letter.toLowerCase())) {
+ *      count++;
+ *    }
+ *  }
+ *  return count;
+ *}
+ *
+ *console.log(vowelsCounter(sentence));
+ */
+
+// Write a function to find the longest word in a given string.
+
+let sentence = "I am learning Programming to become a programmer";
+/*
+*function longestWordFinder(sentence) {
+*  let longestWord='';
+*  let words = sentence.split(' ');
+*  for (let word of words) {
+*    if (longestWord.length < word.length) {
+*      longestWord = word;
 *    }
 *  }
-*  return count;
+*  return longestWord;
 *}
 *
-*let find = 13;
-*let ifRepeated = countRepeat(numbers, find);
-*console.log(ifRepeated);
+*console.log(longestWordFinder(sentence));
 */
+
+// 
