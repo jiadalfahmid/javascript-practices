@@ -36,46 +36,69 @@
 
 // Your task is to calculate the total budget required to buy electronics:
 /*
-*const laptop = "35000 tk";
-*const tablet = "15000 tk";
-*const mobile = "20000 tk";
-*let products = [laptop, tablet, mobile];
-*
-*function prices(products) {
-*  let productPrice = [];
-*  for (const product of products) {
-*    productPrice.push(parseInt(product.split(" ")[0]));
-*  }
-*  let total = 0;
-*  for (const price of productPrice) {
-*    total += price;
-*  }
-*  return total;
-*}
-*
-*console.log(prices(products));
+ *const laptop = "35000 tk";
+ *const tablet = "15000 tk";
+ *const mobile = "20000 tk";
+ *let products = [laptop, tablet, mobile];
+ *
+ *function prices(products) {
+ *  let productPrice = [];
+ *  for (const product of products) {
+ *    productPrice.push(parseInt(product.split(" ")[0]));
+ *  }
+ *  let total = 0;
+ *  for (const price of productPrice) {
+ *    total += price;
+ *  }
+ *  return total;
+ *}
+ *
+ *console.log(prices(products));
  */
 
 // average price of phone
+/*
+ *const phones = [
+ * { model: "PhoneA", brand: "Iphone", price: 95000 },
+ * { model: "PhoneB", brand: "Samsung", price: 40000 },
+ * { model: "PhoneC", brand: "Oppo", price: 26000 },
+ * { model: "PhoneD", brand: "Nokia", price: 35000 },
+ * { model: "PhoneE", brand: "Iphone", price: 105000 },
+ * { model: "PhoneF", brand: "HTC", price: 48000 },
+ *];
+ *
+ *function avgPrice(phones)
+ *{
+ * sum=0;
+ * for(const phone of phones){
+ *  sum+=phone.price;
+ * }
+ * avg= sum / phones.length
+ * return avg;
+ *}
+ *
+ *let price = avgPrice(phones)
+ *console.log(price)
+ */
 
-const phones = [
- { model: "PhoneA", brand: "Iphone", price: 95000 },
- { model: "PhoneB", brand: "Samsung", price: 40000 },
- { model: "PhoneC", brand: "Oppo", price: 26000 },
- { model: "PhoneD", brand: "Nokia", price: 35000 },
- { model: "PhoneE", brand: "Iphone", price: 105000 },
- { model: "PhoneF", brand: "HTC", price: 48000 },
+// total salary
+
+const employees = [
+  { name: "shahin", experience: 5, starting: 20000, increment: 5000 },
+  { name: "shihab", experience: 3, starting: 15000, increment: 7000 },
+  { name: "shikot", experience: 9, starting: 30000, increment: 1000 },
+  { name: "shohel", experience: 0, starting: 29000, increment: 4000 },
 ];
 
-function avgPrice(phones)
-{
- sum=0;
- for(const phone of phones){
-  sum+=phone.price;
- }
- avg= sum / phones.length
- return avg;
+function totalSalary(employees) {
+  let totalSalary = 0;
+  for (const employee of employees) {
+    let increased = employee.experience * employee.increment;
+    let presentSalary = employee.starting + increased;
+    totalSalary += presentSalary;
+  }
+  return totalSalary;
 }
 
-let price = avgPrice(phones)
-console.log(price)
+const total= totalSalary(employees);
+console.log(total);
