@@ -159,3 +159,4 @@
 *let totalCost = discount(300);
 *console.log(totalCost);
 */
+
